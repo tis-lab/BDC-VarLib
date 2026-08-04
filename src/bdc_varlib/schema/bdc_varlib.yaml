@@ -1,0 +1,27 @@
+id: https://w3id.org/bdc/varlib
+name: bdc_varlib
+
+title: BDC Variable Library
+
+description: >
+  A LinkML-based variable library for BioData Catalyst datasets.
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  bdcvl: https://w3id.org/bdc/varlib/
+
+default_prefix: bdcvl
+
+imports:
+  - linkml:types
+
+classes:
+  Variable:
+    description: A data variable definition.
+    slots:
+      - name
+
+slots:
+  name:
+    description: Name of the variable.
+    range: string
