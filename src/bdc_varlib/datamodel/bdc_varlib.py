@@ -1,5 +1,5 @@
 # Auto generated from bdc_varlib.yaml by pythongen.py version: 0.0.1
-# Generation date: 2026-08-04T14:22:31
+# Generation date: 2026-08-04T14:29:28
 # Schema: bdc_varlib
 #
 # id: https://w3id.org/bdc/varlib
