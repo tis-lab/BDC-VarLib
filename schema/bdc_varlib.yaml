@@ -307,7 +307,7 @@ classes:
     class_uri: bdcvl:Variable
 metamodel_version: 1.11.0
 source_file: bdc_varlib.yaml
-source_file_date: '2026-08-04T20:25:17'
+source_file_date: '2026-08-04T20:30:15'
 source_file_size: 457
-generation_date: '2026-08-04T20:25:28'
+generation_date: '2026-08-04T20:30:28'
 
