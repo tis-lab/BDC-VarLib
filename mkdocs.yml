@@ -62,13 +62,13 @@ watch:
 nav:
   - Home: index.md
   - Schema: elements/index.md
-  - About: about.md
+  #- About: about.md
 
 exclude_docs: |
   /templates-linkml/
 
-site_url: https://tis-lab.github.io/BDC Variable Library
-repo_url: https://github.com/tis-lab/BDC Variable Library
+site_url: https://tis-lab.github.io/BDC-VarLib
+repo_url: https://github.com/tis-lab/BDC-VarLib
 
 # Uncomment this block to enable use of Google Analytics.
 # Replace the property value with your own ID.
