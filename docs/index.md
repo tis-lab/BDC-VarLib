@@ -4,16 +4,13 @@ A LinkML-based variable library for BioData Catalyst datasets.
 
 ## Background
 
-BDC Variable Library (BDCVL) re-organizes the study-by-study transform specs
-in RTI International's
-[NHLBI-BDC-DMC-HV](https://github.com/RTIInternational/NHLBI-BDC-DMC-HV/tree/main/priority_variables_transform)
-repository around *harmonized concepts* rather than around individual
-studies. Where the source repo has one transform file per study per concept
-(e.g. `ARIC-ingest/afib.yaml`, `MESA-ingest/afib.yaml`, ...), BDCVL pools all
-of a concept's contributing studies into a single LinkML slot, so `afib` is
-one slot with a comma-delimited `source_study` / `dataset_accession` /
-`variable_accession` annotation rather than eleven separate near-duplicate
-slots.
+BDC Variable Library (BDCVL) clusters related variables into a single
+LinkML slot per concept, so `afib` is one slot with a comma-delimited
+`source_study` / `dataset_accession` / `variable_accession` annotation
+rather than separate near-duplicate records per study. These concepts are
+in turn clustered into category modules, such as Condition/Disease, Lab
+Measurement, and Treatment/Medication, spanning all contributing BioData
+Catalyst studies.
 
 ## Example: the Condition/Disease category
 
