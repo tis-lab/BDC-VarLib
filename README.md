@@ -1,10 +1,6 @@
 # BDC-VarLib
 
-**BDC Variable Library** — a [LinkML](https://linkml.io/)-based variable
-library for [BioData Catalyst](https://biodatacatalyst.nhlbi.nih.gov/)
-datasets. It re-organizes study-by-study transform specs into one slot per
-harmonized clinical concept, grouped into category modules spanning the
-contributing BioData Catalyst studies.
+**BDC Variable Library**: a [LinkML](https://linkml.io/)-based variable library for [BioData Catalyst](https://biodatacatalyst.nhlbi.nih.gov/) datasets. Different studies often capture the same clinical concept as separate dbGaP variables. Atrial fibrillation, for instance, is asked as a distinct question in ARIC, CHS, FHS, MESA, and several other cohorts, each with its own `phv` accession. BDC Variable Library groups those related variables into a single harmonized slot per concept, annotated with exactly which studies, datasets, and variables it pools together. Those harmonized concepts are in turn clustered into category modules, such as Condition/Disease, Lab Measurement, and Treatment/Medication, spanning all contributing BioData Catalyst studies.
 
 📖 **Documentation (current variable/category/study counts):** [tis-lab.github.io/BDC-VarLib](https://tis-lab.github.io/BDC-VarLib)
 
