@@ -586,16 +586,13 @@
 <h1 id="about-bdc-variable-library">About BDC Variable Library</h1>
 <p>A LinkML-based variable library for BioData Catalyst datasets.</p>
 <h2 id="background">Background</h2>
-<p>BDC Variable Library (BDCVL) re-organizes the study-by-study transform specs
-in RTI International's
-<a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HV/tree/main/priority_variables_transform">NHLBI-BDC-DMC-HV</a>
-repository around <em>harmonized concepts</em> rather than around individual
-studies. Where the source repo has one transform file per study per concept
-(e.g. <code>ARIC-ingest/afib.yaml</code>, <code>MESA-ingest/afib.yaml</code>, ...), BDCVL pools all
-of a concept's contributing studies into a single LinkML slot, so <code>afib</code> is
-one slot with a comma-delimited <code>source_study</code> / <code>dataset_accession</code> /
-<code>variable_accession</code> annotation rather than eleven separate near-duplicate
-slots.</p>
+<p>BDC Variable Library (BDCVL) clusters related variables into a single
+LinkML slot per concept, so <code>afib</code> is one slot with a comma-delimited
+<code>source_study</code> / <code>dataset_accession</code> / <code>variable_accession</code> annotation
+rather than separate near-duplicate records per study. These concepts are
+in turn clustered into category modules, such as Condition/Disease, Lab
+Measurement, and Treatment/Medication, spanning all contributing BioData
+Catalyst studies.</p>
 <h2 id="example-the-conditiondisease-category">Example: the Condition/Disease category</h2>
 <p>Each category module is a LinkML class whose slots are its concepts. Here's
 what that looks like for <code>ConditionDisease</code> — every concept as a row, every
