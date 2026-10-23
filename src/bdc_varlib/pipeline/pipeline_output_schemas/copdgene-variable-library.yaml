@@ -1,0 +1,978 @@
+single_continuous_variables:
+- id: dbgap:phv00159583
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159583
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: diasBP
+  source_variable_description: Diastolic blood pressure, 1st measure
+  data_type: integer
+  minimum_value: '34'
+  maximum_value: '135'
+- id: dbgap:phv00159584
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159584
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: HR
+  source_variable_description: Heart rate bpm
+  data_type: integer
+  minimum_value: '33'
+  maximum_value: '140'
+- id: dbgap:phv00159589
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal (via expression)
+  source_id: phv00159589
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Resting_SaO2
+  source_variable_description: Resting SaO2 %
+  data_type: integer
+  minimum_value: '70'
+  maximum_value: '100'
+- id: dbgap:phv00159590
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159590
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: sysBP
+  source_variable_description: Systolic blood pressure, 1st measure
+  data_type: integer
+  minimum_value: '60'
+  maximum_value: '228'
+- id: dbgap:phv00159591
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159591
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Weight_KG
+  source_variable_description: Weight kg
+  data_type: decimal
+  minimum_value: '32.5'
+- id: dbgap:phv00159592
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159592
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Height_CM
+  source_variable_description: Height cm
+  data_type: decimal
+  minimum_value: '116.5'
+  maximum_value: '208.3'
+- id: dbgap:phv00159593
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159593
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: BMI
+  source_variable_description: BMI
+  data_type: decimal
+  minimum_value: '12.29'
+  maximum_value: '65.82'
+- id: dbgap:phv00159702
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression)
+  source_id: phv00159702
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: AsthmaAge
+  source_variable_description: 'Asthma: At about what age did asthma start'
+  data_type: integer
+  minimum_value: '0'
+  maximum_value: '77'
+- id: dbgap:phv00159733
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression)
+  source_id: phv00159733
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CopdAge
+  source_variable_description: 'COPD: At about what age did COPD start'
+  data_type: integer
+  minimum_value: '1'
+  maximum_value: '79'
+- id: dbgap:phv00159738
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression)
+  source_id: phv00159738
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: SleepApAge
+  source_variable_description: 'Sleep apnea: At about what age did sleep apnea start'
+  data_type: integer
+  minimum_value: '0'
+  maximum_value: '79'
+- id: dbgap:phv00159848
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159848
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FEV1pp_post
+  source_variable_description: FEV1 % pred post-bronchodilator
+  data_type: decimal
+  minimum_value: '8.7'
+  maximum_value: '180.4'
+- id: dbgap:phv00159849
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159849
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FVCpp_post
+  source_variable_description: FVC % pred post-bronchodilator
+  data_type: decimal
+  minimum_value: '20.0'
+  maximum_value: '176.2'
+- id: dbgap:phv00159850
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159850
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FEV1_FVC_post
+  source_variable_description: FEV1/FVC post-bronchodilator
+  data_type: decimal
+  minimum_value: '0.15'
+  maximum_value: '1.0'
+- id: dbgap:phv00159851
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159851
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FEV1_post
+  source_variable_description: FEV1 post-bronchodilator
+  data_type: decimal
+  minimum_value: '0.22'
+  maximum_value: '5.502'
+- id: dbgap:phv00159852
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159852
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FVC_post
+  source_variable_description: FVC post-bronchodilator
+  data_type: decimal
+  minimum_value: '0.593'
+  maximum_value: '7.719'
+- id: dbgap:phv00159853
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159853
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FEV1_pre
+  source_variable_description: FEV1 pre-bronchodilator
+  data_type: decimal
+  minimum_value: '0.234'
+  maximum_value: '5.364'
+- id: dbgap:phv00159854
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159854
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FVC_pre
+  source_variable_description: FVC pre-bronchodilator
+  data_type: decimal
+  minimum_value: '0.477'
+  maximum_value: '7.409'
+- id: dbgap:phv00159855
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00159855
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: FEV1_FVC_pre
+  source_variable_description: FEV1/FVC pre-bronchodilator
+  data_type: decimal
+  minimum_value: '0.14'
+  maximum_value: '0.98'
+- id: dbgap:phv00169347
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression)
+  source_id: phv00169347
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: EmphAge
+  source_variable_description: 'Emphysema: At about what age did it start'
+  data_type: integer
+  minimum_value: '1'
+  maximum_value: '79'
+- id: dbgap:phv00568808
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for MeasurementObservation.age_at_observation (via
+    expression); MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); MeasurementObservation.age_at_observation
+    (via expression); MeasurementObservation.age_at_observation (via expression);
+    MeasurementObservation.age_at_observation (via expression); SdohObservation.age_at_observation
+    (via expression); SdohObservation.age_at_observation (via expression); Visit.age_at_visit_end
+    (via expression); Visit.age_at_visit_start (via expression)
+  source_id: phv00568808
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: age_visit
+  source_variable_description: Age at current visit
+  data_type: integer
+  minimum_value: '39'
+  maximum_value: '90'
+- id: dbgap:phv00568826
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00568826
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Waist_CM
+  source_variable_description: Waist circumference, cm
+  data_type: decimal
+  minimum_value: '0.0'
+  maximum_value: '398.8'
+- id: dbgap:phv00569133
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569133
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: wbc
+  source_variable_description: WBC
+  data_type: decimal
+  minimum_value: '0.6'
+  maximum_value: '66.3'
+- id: dbgap:phv00569134
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569134
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: neutrophl
+  source_variable_description: Neutrophils (K/uL)
+  data_type: decimal
+  minimum_value: '0.23'
+  maximum_value: '22.9'
+- id: dbgap:phv00569136
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569136
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: lymphcyt
+  source_variable_description: Lymphocytes (K/uL)
+  data_type: decimal
+  minimum_value: '0.1'
+  maximum_value: '61.3'
+- id: dbgap:phv00569138
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569138
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: monocyt
+  source_variable_description: Monocytes (K/uL)
+  data_type: decimal
+  minimum_value: '0.0'
+  maximum_value: '4.1'
+- id: dbgap:phv00569140
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569140
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: eosinphl
+  source_variable_description: Eosinophils (K/uL)
+  data_type: decimal
+  minimum_value: '0.0'
+  maximum_value: '2.5'
+- id: dbgap:phv00569142
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569142
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: basophl
+  source_variable_description: Basophils (K/uL)
+  data_type: decimal
+  minimum_value: '0.0'
+  maximum_value: '0.9'
+- id: dbgap:phv00569144
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569144
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: RBC
+  source_variable_description: RBC
+  data_type: decimal
+  minimum_value: '1.95'
+  maximum_value: '7.9'
+- id: dbgap:phv00569145
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569145
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: hemoglobin
+  source_variable_description: Hgb (g/dL)
+  data_type: decimal
+  minimum_value: '4.8'
+  maximum_value: '21.1'
+- id: dbgap:phv00569146
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569146
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: hematocrit
+  source_variable_description: Hct (%)
+  data_type: decimal
+  minimum_value: '16.0'
+  maximum_value: '64.2'
+- id: dbgap:phv00569147
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569147
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: MCV
+  source_variable_description: MCV (fL)
+  data_type: decimal
+  minimum_value: '56.0'
+  maximum_value: '122.8'
+- id: dbgap:phv00569148
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569148
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: MCH
+  source_variable_description: MCH (pg)
+  data_type: decimal
+  minimum_value: '15.0'
+  maximum_value: '41.0'
+- id: dbgap:phv00569149
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569149
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: MCHC
+  source_variable_description: MCHC (g/dL)
+  data_type: decimal
+  minimum_value: '25.7'
+  maximum_value: '38.8'
+- id: dbgap:phv00569150
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569150
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Platelets
+  source_variable_description: Platelets
+  data_type: integer
+  minimum_value: '0'
+  maximum_value: '999'
+- id: dbgap:phv00569175
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569175
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Pred_FEV1
+  source_variable_description: Predicted FEV1, liters
+  data_type: decimal
+  minimum_value: '0.9'
+  maximum_value: '5.14'
+- id: dbgap:phv00569177
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569177
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Pred_FVC
+  source_variable_description: Predicted FVC, liters
+  data_type: decimal
+  minimum_value: '1.21'
+  maximum_value: '6.65'
+- id: dbgap:phv00569179
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal
+  source_id: phv00569179
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Pred_FEV1_FVC
+  source_variable_description: Predicted FEV1/FVC
+  data_type: decimal
+  minimum_value: '0.6902'
+  maximum_value: '0.8319'
+single_categorical_variables:
+- id: dbgap:phv00159568
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.associated_participant (via expression);
+    Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_participant (via expression); Condition.associated_participant
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Demography.associated_participant
+    (via expression); Demography.associated_visit (via expression); DrugExposure.associated_participant
+    (via expression); DrugExposure.associated_participant (via expression); DrugExposure.associated_participant
+    (via expression); DrugExposure.associated_participant (via expression); DrugExposure.associated_visit
+    (via expression); DrugExposure.associated_visit (via expression); DrugExposure.associated_visit
+    (via expression); DrugExposure.associated_visit (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_participant (via expression); MeasurementObservation.associated_participant
+    (via expression); MeasurementObservation.associated_participant (via expression);
+    MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservationSet.associated_participant
+    (via expression); MeasurementObservationSet.associated_participant (via expression);
+    MeasurementObservationSet.associated_visit (via expression); MeasurementObservationSet.associated_visit
+    (via expression); Procedure.associated_participant (via expression); Procedure.associated_participant
+    (via expression); Procedure.associated_visit (via expression); Procedure.associated_visit
+    (via expression); SdohObservation.associated_participant (via expression); SdohObservation.associated_participant
+    (via expression); SdohObservation.associated_visit (via expression); SdohObservation.associated_visit
+    (via expression); Visit.associated_participant (via expression); Visit.id (via
+    expression)
+  source_id: phv00159568
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: SUBJECT_ID
+  source_variable_description: Subject ID
+  data_type: string
+- id: dbgap:phv00159571
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Demography.sex
+  source_id: phv00159571
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: gender
+  source_variable_description: Reported gender
+  data_type: enum
+  coded_values:
+  - indicator_char: '1'
+    indicator_meaning: Male
+  - indicator_char: '2'
+    indicator_meaning: Female
+- id: dbgap:phv00159572
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Demography.race
+  source_id: phv00159572
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: race
+  source_variable_description: Race
+  data_type: enum
+  coded_values:
+  - indicator_char: '1'
+    indicator_meaning: White
+  - indicator_char: '2'
+    indicator_meaning: Black or African American
+  - indicator_char: '3'
+    indicator_meaning: Asian
+  - indicator_char: '4'
+    indicator_meaning: Pacific Islander
+  - indicator_char: '5'
+    indicator_meaning: American Indian / Alaska Native
+  - indicator_char: '6'
+    indicator_meaning: More than one race
+  - indicator_char: '7'
+    indicator_meaning: Other
+- id: dbgap:phv00159573
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Demography.ethnicity
+  source_id: phv00159573
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: ethnic
+  source_variable_description: Your ethnic background
+  data_type: enum
+  coded_values:
+  - indicator_char: '1'
+    indicator_meaning: Hispanic or Latino
+  - indicator_char: '2'
+    indicator_meaning: Not Hispanic or Latino
+- id: dbgap:phv00159608
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159608
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Angina
+  source_variable_description: Angina
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159609
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159609
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CongestHeartFail
+  source_variable_description: Congestive heart failure
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159610
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159610
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CoronaryArtery
+  source_variable_description: Coronary artery disease
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159611
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159611
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Diabetes
+  source_variable_description: Diabetes
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159612
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159612
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: HighBloodPres
+  source_variable_description: High blood pressure
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159615
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159615
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: HeartAttack
+  source_variable_description: Heart attack (MI)
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159616
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159616
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: BloodClots
+  source_variable_description: Blood clots (in legs or lungs)
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159618
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159618
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: PeriphVascular
+  source_variable_description: Peripheral vascular disease
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159619
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159619
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Stroke
+  source_variable_description: Stroke
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159620
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00159620
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: TIA
+  source_variable_description: TIA (transient ischemic attack)
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159631
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Procedure.procedure_status
+  source_id: phv00159631
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CABG
+  source_variable_description: Coronary artery bypass surgery (CABG)
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159632
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Procedure.procedure_status
+  source_id: phv00159632
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Angioplasty
+  source_variable_description: Angioplasty or cardiac stents placed
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159644
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for DrugExposure.exposure_status
+  source_id: phv00159644
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CombcCSBagon
+  source_variable_description: Combination inhaled corticosteroid and beta-agonist
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159646
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for DrugExposure.exposure_status
+  source_id: phv00159646
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Cortsterinhal
+  source_variable_description: Inhaled corticosteroids
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159647
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for DrugExposure.exposure_status
+  source_id: phv00159647
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: CortsterOral
+  source_variable_description: Oral corticosteroids
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00159701
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression);
+    Condition.condition_status
+  source_id: phv00159701
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Asthma
+  source_variable_description: 'Asthma: Have you ever had asthma'
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+  - indicator_char: '3'
+    indicator_meaning: Don't know
+- id: dbgap:phv00159729
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression);
+    Condition.condition_status
+  source_id: phv00159729
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Emphysema
+  source_variable_description: 'Emphysema: Have you ever had emphysema'
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+  - indicator_char: '3'
+    indicator_meaning: Don't know
+- id: dbgap:phv00159731
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression);
+    Condition.condition_status
+  source_id: phv00159731
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: COPD
+  source_variable_description: 'COPD: Have you ever had COPD'
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+  - indicator_char: '3'
+    indicator_meaning: Don't know
+- id: dbgap:phv00159736
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.age_at_condition_start (via expression);
+    Condition.condition_status
+  source_id: phv00159736
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: SleepApnea
+  source_variable_description: 'Sleep apnea: Have you ever had sleep apnea'
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+  - indicator_char: '3'
+    indicator_meaning: Don't know
+- id: dbgap:phv00159773
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for SdohObservation.value_enum
+  source_id: phv00159773
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: SchoolCompleted
+  source_variable_description: Highest degree or level of school completed
+  data_type: enum
+  coded_values:
+  - indicator_char: '1'
+    indicator_meaning: 8th grade or less
+  - indicator_char: '2'
+    indicator_meaning: High school, no diploma
+  - indicator_char: '3'
+    indicator_meaning: High school graduate or GED
+  - indicator_char: '4'
+    indicator_meaning: Some college or technical school, no degree
+  - indicator_char: '5'
+    indicator_meaning: College or technical school graduate (Bachlor's or Associate
+      degree)
+  - indicator_char: '6'
+    indicator_meaning: Master's or Doctoral degree
+- id: dbgap:phv00568798
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Condition.associated_visit
+    (via expression); Condition.associated_visit (via expression); Demography.associated_visit
+    (via expression); DrugExposure.associated_visit (via expression); DrugExposure.associated_visit
+    (via expression); DrugExposure.associated_visit (via expression); DrugExposure.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservation.associated_visit
+    (via expression); MeasurementObservation.associated_visit (via expression); MeasurementObservationSet.associated_visit
+    (via expression); MeasurementObservationSet.associated_visit (via expression);
+    Procedure.associated_visit (via expression); Procedure.associated_visit (via expression);
+    SdohObservation.associated_visit (via expression); SdohObservation.associated_visit
+    (via expression); Visit.id (via expression); Visit.name (via expression)
+  source_id: phv00568798
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: phase_study
+  source_variable_description: Phase of COPDGene study
+  data_type: enum
+  coded_values:
+  - indicator_char: P1
+    indicator_meaning: Phase 1 2007-2011
+  - indicator_char: P2
+    indicator_meaning: Phase 2 2013-2017
+  - indicator_char: P3
+    indicator_meaning: Phase 3 2018-2023
+  - indicator_char: P3B
+    indicator_meaning: Phase 3 Short-term 1-year follow-up 2019-2020
+- id: dbgap:phv00568806
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for MeasurementObservation.value_enum
+  source_id: phv00568806
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: smoking_status
+  source_variable_description: Smoking Status (3-state)
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: Never-smoked
+  - indicator_char: '1'
+    indicator_meaning: Former smoker
+  - indicator_char: '2'
+    indicator_meaning: Current smoker
+- id: dbgap:phv00568849
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Condition.condition_status
+  source_id: phv00568849
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: AFib
+  source_variable_description: Atrial fibrillation
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00568915
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_decimal (via expression)
+  source_id: phv00568915
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: alcohol_how_often
+  source_variable_description: How often do you have a drink containing alcohol?
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: Never
+  - indicator_char: '1'
+    indicator_meaning: Monthly or less
+  - indicator_char: '2'
+    indicator_meaning: Two to four times a month
+  - indicator_char: '3'
+    indicator_meaning: Two to four times per week
+  - indicator_char: '4'
+    indicator_meaning: Four or more times per week
+- id: dbgap:phv00568929
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for DrugExposure.exposure_status
+  source_id: phv00568929
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: currmedhighbp
+  source_variable_description: Current medication for high blood pressure
+  data_type: enum
+  coded_values:
+  - indicator_char: '0'
+    indicator_meaning: 'No'
+  - indicator_char: '1'
+    indicator_meaning: 'Yes'
+- id: dbgap:phv00569009
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Quantity.value_concept
+  source_id: phv00569009
+  file_id: pht002239
+  file_name: COPDGene_Subject_Phenotypes
+  variable_name: Income
+  source_variable_description: Income
+  data_type: enum
+  coded_values:
+  - indicator_char: '1'
+    indicator_meaning: Under $15,000
+  - indicator_char: '2'
+    indicator_meaning: $15,000-35,000
+  - indicator_char: '3'
+    indicator_meaning: $35,000-50,000
+  - indicator_char: '4'
+    indicator_meaning: $50,000-75,000
+  - indicator_char: '5'
+    indicator_meaning: More than $75,000
+  - indicator_char: '6'
+    indicator_meaning: Decline to answer
+- id: dbgap:phv00569495
+  associated_study: bdchm:Study/phs000179
+  variable_description: Source for Participant.id (via expression); Participant.identity
+  source_id: phv00569495
+  file_id: pht016246
+  file_name: Demographics_Baseline
+  variable_name: SUBJECT_ID
+  source_variable_description: Subject ID
+  data_type: string
