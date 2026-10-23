@@ -311,6 +311,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -420,7 +447,7 @@
 
 
 <h1 id="enum-conditionstatusenum">Enum: ConditionStatusEnum</h1>
-<p><em>The status vocabulary real value_mappings target consistently across the repo's Condition/DrugExposure derivations.</em></p>
+<p><em>Status vocabulary used by Condition, DrugExposure and Procedure derivations.</em></p>
 <div>
 <p>URI: <a href="https://w3id.org/bdc/varlib/ConditionStatusEnum">bdcvl:ConditionStatusEnum</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
@@ -436,17 +463,17 @@
 <tr>
 <td>ABSENT</td>
 <td>None</td>
-<td>Condition/exposure reported absent</td>
+<td>Reported absent</td>
 </tr>
 <tr>
 <td>PRESENT</td>
 <td>None</td>
-<td>Condition/exposure reported present</td>
+<td>Reported present</td>
 </tr>
 <tr>
 <td>HISTORICAL</td>
 <td>None</td>
-<td>Condition present historically, not currently</td>
+<td>Present historically, not currently</td>
 </tr>
 <tr>
 <td>UNKNOWN</td>
@@ -465,228 +492,692 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../afib/">afib</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0000822/">hp_0000822</a></td>
+<td>PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; WORKING_DIAGNOSIS</td>
 </tr>
 <tr>
-<td><a href="../angina/">angina</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0001297/">hp_0001297</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../asthma/">asthma</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0001342/">hp_0001342</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../asthma_md/">asthma_md</a></td>
-<td>CLINICAL_DIAGNOSIS</td>
+<td><a href="../hp_0001653/">hp_0001653</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../blood_clots/">blood_clots</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0001681/">hp_0001681</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONF...</td>
 </tr>
 <tr>
-<td><a href="../bronchitis/">bronchitis</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0001712/">hp_0001712</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../bronchitis_md/">bronchitis_md</a></td>
-<td>CLINICAL_DIAGNOSIS</td>
+<td><a href="../hp_0001714/">hp_0001714</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../chd/">chd</a></td>
-<td>CASE_REPORT_FORM; CLINICAL_DIAGNOSIS; PATIENT_SELF_REPORT</td>
+<td><a href="../hp_0001718/">hp_0001718</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../chr_bronchitis/">chr_bronchitis</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; PATIENT_SELF_REPORT</td>
+<td><a href="../hp_0002170/">hp_0002170</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../copd/">copd</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0002621/">hp_0002621</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../cvd/">cvd</a></td>
-<td>CLINICAL_DIAGNOSIS</td>
+<td><a href="../hp_0002625/">hp_0002625</a></td>
+<td>PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../diabetes/">diabetes</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0004417/">hp_0004417</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../emphysema/">emphysema</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; PATIENT_SELF_REPORT</td>
+<td><a href="../hp_0004420/">hp_0004420</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../hyperten/">hyperten</a></td>
-<td>CASE_REPORT_FORM; CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../hp_0012393/">hp_0012393</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../hypertension/">hypertension</a></td>
-<td>CLINICAL_DIAGNOSIS; SELF_DIAGNOSIS</td>
+<td><a href="../hp_0025691/">hp_0025691</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../obesity/">obesity</a></td>
-<td>CASE_REPORT_FORM; CLINICAL_DIAGNOSIS</td>
+<td><a href="../hp_0030828/">hp_0030828</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../pad/">pad</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; SELF_REPORTED</td>
+<td><a href="../hp_0040270/">hp_0040270</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../pulmonary_fibrosis/">pulmonary_fibrosis</a></td>
-<td>CLINICAL_DIAGNOSIS</td>
+<td><a href="../mondo_0000745/">mondo_0000745</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../slp_ap/">slp_ap</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; PATIENT_SELF_REPORT</td>
+<td><a href="../mondo_0000831/">mondo_0000831</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../stroke/">stroke</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0001302/">mondo_0001302</a></td>
+<td>DEATH_RECORD; PATIENT_SELF_REPORT; WORKING_DIAGNOSIS</td>
 </tr>
 <tr>
-<td><a href="../stroke_isch_atk/">stroke_isch_atk</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0002679/">mondo_0002679</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../valv_hrtdis/">valv_hrtdis</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; PATIENT_SELF_REPORT</td>
+<td><a href="../mondo_0002771/">mondo_0002771</a></td>
+<td>PATIENT_SELF_REPORT_DR_CONFIRMED</td>
 </tr>
 <tr>
-<td><a href="../ven_thromb/">ven_thromb</a></td>
-<td>CLINICAL_DIAGNOSIS; OMOP:4822126; OMOP:4822160; PATIENT_SELF-REPORTED_CONDITI...</td>
+<td><a href="../mondo_0002869/">mondo_0002869</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../hist_cor_art_dis/">hist_cor_art_dis</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0003767/">mondo_0003767</a></td>
+<td>WORKING_DIAGNOSIS</td>
 </tr>
 <tr>
-<td><a href="../hist_cor_bypg/">hist_cor_bypg</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0003803/">mondo_0003803</a></td>
+<td>WORKING_DIAGNOSIS</td>
 </tr>
 <tr>
-<td><a href="../hist_coronary_bypass/">hist_coronary_bypass</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0004784/">mondo_0004784</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../hist_cvd/">hist_cvd</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION; PATIENT_SELF_REPORT</td>
+<td><a href="../mondo_0004849/">mondo_0004849</a></td>
+<td>PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED</td>
 </tr>
 <tr>
-<td><a href="../hist_heart_disease/">hist_heart_disease</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0004979/">mondo_0004979</a></td>
+<td>HEALTH_RECORD; PATIENT_MEDICATION_REPORT; PATIENT_SELF_REPORT; PATIENT_SELF_R...</td>
 </tr>
 <tr>
-<td><a href="../hist_heart_failure/">hist_heart_failure</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0004981/">mondo_0004981</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICI...</td>
 </tr>
 <tr>
-<td><a href="../hist_hrt_failure/">hist_hrt_failure</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0004995/">mondo_0004995</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../hist_hrtdis/">hist_hrtdis</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0005002/">mondo_0005002</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; STUDY_R...</td>
 </tr>
 <tr>
-<td><a href="../hist_mi/">hist_mi</a></td>
-<td>PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0005009/">mondo_0005009</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICI...</td>
 </tr>
 <tr>
-<td><a href="../hist_my_inf/">hist_my_inf</a></td>
-<td>CLINICAL_DIAGNOSIS; EHR_ENCOUNTER_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION;...</td>
+<td><a href="../mondo_0005010/">mondo_0005010</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICI...</td>
 </tr>
 <tr>
-<td><a href="../history_cvd/">history_cvd</a></td>
-<td>CLINICAL_DIAGNOSIS</td>
+<td><a href="../mondo_0005015/">mondo_0005015</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_MEDICATION_REPORT; PATIENT_SELF_REPORT; ...</td>
 </tr>
 <tr>
-<td><a href="../carotid_plaque/">carotid_plaque</a></td>
-<td>CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</td>
+<td><a href="../mondo_0005044/">mondo_0005044</a></td>
+<td>CASE_REPORT_FORM; DEATH_RECORD; HEALTH_RECORD; PATIENT_MEDICATION_REPORT; PAT...</td>
 </tr>
 <tr>
-<td><a href="../pacem_stat/">pacem_stat</a></td>
-<td>MeasurementObservation/Procedure derivation of 'pacem_stat'</td>
+<td><a href="../mondo_0005068/">mondo_0005068</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONF...</td>
 </tr>
 <tr>
-<td><a href="../aspirin/">aspirin</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005098/">mondo_0005098</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONF...</td>
 </tr>
 <tr>
-<td><a href="../tak_aceinhib/">tak_aceinhib</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005099/">mondo_0005099</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../tak_adrenergics/">tak_adrenergics</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION</td>
+<td><a href="../mondo_0005139/">mondo_0005139</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../tak_aldorecepblk/">tak_aldorecepblk</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005149/">mondo_0005149</a></td>
+<td>HEALTH_RECORD; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../tak_alphablk/">tak_alphablk</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005252/">mondo_0005252</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED</td>
 </tr>
 <tr>
-<td><a href="../tak_angiorecepblk/">tak_angiorecepblk</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005264/">mondo_0005264</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../tak_antihypertensives/">tak_antihypertensives</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION</td>
+<td><a href="../mondo_0005267/">mondo_0005267</a></td>
+<td>DEATH_RECORD; PATIENT_SELF_REPORT; WORKING_DIAGNOSIS</td>
 </tr>
 <tr>
-<td><a href="../tak_calchanblk/">tak_calchanblk</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION; PRESCRIPT...</td>
+<td><a href="../mondo_0005279/">mondo_0005279</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICI...</td>
 </tr>
 <tr>
-<td><a href="../tak_cenactag/">tak_cenactag</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION</td>
+<td><a href="../mondo_0005294/">mondo_0005294</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; PHYSICI...</td>
 </tr>
 <tr>
-<td><a href="../tak_cort_steroid_oral/">tak_cort_steroid_oral</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005296/">mondo_0005296</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED</td>
 </tr>
 <tr>
-<td><a href="../tak_cort_steroid_resp/">tak_cort_steroid_resp</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION</td>
+<td><a href="../mondo_0005311/">mondo_0005311</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../tak_diuret/">tak_diuret</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION; PRESCRIPT...</td>
+<td><a href="../mondo_0005350/">mondo_0005350</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../tak_insulin/">tak_insulin</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005386/">mondo_0005386</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION; STUDY_RECORD; WOR...</td>
 </tr>
 <tr>
-<td><a href="../tak_med_diab/">tak_med_diab</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005394/">mondo_0005394</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
 </tr>
 <tr>
-<td><a href="../tak_nstat_med/">tak_nstat_med</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005399/">mondo_0005399</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION; STUDY_RECORD; WOR...</td>
 </tr>
 <tr>
-<td><a href="../tak_orlhypoag/">tak_orlhypoag</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005453/">mondo_0005453</a></td>
+<td>PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; STUDY_RECORD; WORKING_...</td>
 </tr>
 <tr>
-<td><a href="../tak_statin/">tak_statin</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005492/">mondo_0005492</a></td>
+<td>PATIENT_SELF_REPORT</td>
 </tr>
 <tr>
-<td><a href="../tak_steroid/">tak_steroid</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005607/">mondo_0005607</a></td>
+<td>PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../tak_vasodil/">tak_vasodil</a></td>
-<td>PATIENT SELF-REPORTED MEDICATION; PATIENT_SELF_REPORTED_MEDICATION</td>
+<td><a href="../mondo_0005648/">mondo_0005648</a></td>
+<td>STUDY_RECORD</td>
 </tr>
 <tr>
-<td><a href="../taking_non_statin_medication/">taking_non_statin_medication</a></td>
+<td><a href="../mondo_0006803/">mondo_0006803</a></td>
+<td>PATIENT_SELF_REPORT; STUDY_RECORD</td>
+</tr>
+<tr>
+<td><a href="../mondo_0006809/">mondo_0006809</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../mondo_0006920/">mondo_0006920</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../mondo_0006955/">mondo_0006955</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PATIENT_SELF_REPORT_DR_CONFIRMED; WORKING...</td>
+</tr>
+<tr>
+<td><a href="../mondo_0011057/">mondo_0011057</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../mondo_0011122/">mondo_0011122</a></td>
+<td>CASE_REPORT_FORM; STUDY_RECORD; WORKING_DIAGNOSIS</td>
+</tr>
+<tr>
+<td><a href="../mondo_0013792/">mondo_0013792</a></td>
+<td>PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../mondo_0024355/">mondo_0024355</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../mondo_0024644/">mondo_0024644</a></td>
+<td>HEALTH_RECORD</td>
+</tr>
+<tr>
+<td><a href="../mondo_0042981/">mondo_0042981</a></td>
+<td>STUDY_RECORD</td>
+</tr>
+<tr>
+<td><a href="../mondo_0850282/">mondo_0850282</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../mondo_1060198/">mondo_1060198</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../mondo_1060199/">mondo_1060199</a></td>
+<td>PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../omop_4102124/">omop_4102124</a></td>
+<td>HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION; STUDY_RECORD</td>
+</tr>
+<tr>
+<td><a href="../atc_a10/">atc_a10</a></td>
 <td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_a10a/">atc_a10a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_a10b/">atc_a10b</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c01a/">atc_c01a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c01b/">atc_c01b</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c01d/">atc_c01d</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c02/">atc_c02</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c02l/">atc_c02l</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c03/">atc_c03</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION; PRESCRIPTION_WRITTEN</td>
+</tr>
+<tr>
+<td><a href="../atc_c03da/">atc_c03da</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c04/">atc_c04</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c07a/">atc_c07a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c07d/">atc_c07d</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c08/">atc_c08</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION; PRESCRIPTION_WRITTEN</td>
+</tr>
+<tr>
+<td><a href="../atc_c09a/">atc_c09a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c09ba/">atc_c09ba</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c09c/">atc_c09c</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c09da/">atc_c09da</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c10a/">atc_c10a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c10aa/">atc_c10aa</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c10ab/">atc_c10ab</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c10ac/">atc_c10ac</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_c10ad/">atc_c10ad</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_h02a/">atc_h02a</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_m04/">atc_m04</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_r03ak/">atc_r03ak</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../atc_r03ba/">atc_r03ba</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../mesh_d007328/">mesh_d007328</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../mesh_d013974/">mesh_d013974</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175415/">ndfrt_n0000175415</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175418/">ndfrt_n0000175418</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175419/">ndfrt_n0000175419</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175421/">ndfrt_n0000175421</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175553/">ndfrt_n0000175553</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175554/">ndfrt_n0000175554</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175557/">ndfrt_n0000175557</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175562/">ndfrt_n0000175562</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175594/">ndfrt_n0000175594</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175690/">ndfrt_n0000175690</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000175980/">ndfrt_n0000175980</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../ndfrt_n0000180292/">ndfrt_n0000180292</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_10572/">rxcui_10572</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_10600/">rxcui_10600</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_11170/">rxcui_11170</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_1191/">rxcui_1191</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_1202/">rxcui_1202</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_1436/">rxcui_1436</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_149/">rxcui_149</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_151549/">rxcui_151549</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_151890/">rxcui_151890</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_152413/">rxcui_152413</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_152440/">rxcui_152440</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_17767/">rxcui_17767</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_1998/">rxcui_1998</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_203344/">rxcui_203344</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_20352/">rxcui_20352</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_2404/">rxcui_2404</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_25789/">rxcui_25789</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_2599/">rxcui_2599</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_2683/">rxcui_2683</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_33910/">rxcui_33910</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_3443/">rxcui_3443</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_4100/">rxcui_4100</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_4316/">rxcui_4316</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_4815/">rxcui_4815</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_4821/">rxcui_4821</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_4917/">rxcui_4917</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_5470/">rxcui_5470</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_5487/">rxcui_5487</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_5764/">rxcui_5764</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_6185/">rxcui_6185</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_6809/">rxcui_6809</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_6876/">rxcui_6876</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_6918/">rxcui_6918</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_7226/">rxcui_7226</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_72610/">rxcui_72610</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_73044/">rxcui_73044</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_7393/">rxcui_7393</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_7396/">rxcui_7396</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_7417/">rxcui_7417</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_7435/">rxcui_7435</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_8332/">rxcui_8332</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_84108/">rxcui_84108</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_8588/">rxcui_8588</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_8787/">rxcui_8787</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_9260/">rxcui_9260</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../rxcui_9997/">rxcui_9997</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_ah000/">vandf_ah000</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_cn104/">vandf_cn104</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_cv150/">vandf_cv150</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_cv702/">vandf_cv702</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_ga300/">vandf_ga300</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_hs051/">vandf_hs051</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_hs500/">vandf_hs500</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_hs502/">vandf_hs502</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../vandf_hs509/">vandf_hs509</a></td>
+<td>PATIENT_SELF_REPORTED_MEDICATION</td>
+</tr>
+<tr>
+<td><a href="../omop_1242799/">omop_1242799</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../omop_4044550/">omop_4044550</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../omop_4178405/">omop_4178405</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../omop_4184832/">omop_4184832</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../omop_4223020/">omop_4223020</a></td>
+<td>PATIENT_SELF_REPORT</td>
+</tr>
+<tr>
+<td><a href="../omop_4336464/">omop_4336464</a></td>
+<td>DEATH_RECORD; HEALTH_RECORD; PATIENT_SELF_REPORT; PHYSICIAN_ADJUDICATION</td>
+</tr>
+<tr>
+<td><a href="../omop_45772840/">omop_45772840</a></td>
+<td>CASE_REPORT_FORM; EHR; HEALTH_RECORD; PATIENT_SELF_REPORT; STUDY_RECORD</td>
 </tr>
 </tbody>
 </table>
@@ -698,20 +1189,19 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 <div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConditionStatusEnum</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The status vocabulary real value_mappings target consistently across</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">the repo&#39;s Condition/DrugExposure derivations.</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Status vocabulary used by Condition, DrugExposure and Procedure derivations.</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bdc/varlib</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
 <span class="nt">permissible_values</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">ABSENT</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ABSENT</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Condition/exposure reported absent.</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Reported absent.</span>
 <span class="w">  </span><span class="nt">PRESENT</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">PRESENT</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Condition/exposure reported present.</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Reported present.</span>
 <span class="w">  </span><span class="nt">HISTORICAL</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">HISTORICAL</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Condition present historically, not currently.</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Present historically, not currently.</span>
 <span class="w">  </span><span class="nt">UNKNOWN</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">UNKNOWN</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Not known / not reported.</span>

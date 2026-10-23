@@ -76,7 +76,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#about-bdc-variable-library" class="md-skip">
+        <a href="#bdc-variable-library" class="md-skip">
           Skip to content
         </a>
       
@@ -337,10 +337,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-the-conditiondisease-category" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: the Condition/Disease category
+        Classes
       
     </span>
   </a>
@@ -348,10 +348,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#concepts-per-category" class="md-nav__link">
+  <a href="#from-class-to-concept-to-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Concepts per category
+        From class to concept to variable
       
     </span>
   </a>
@@ -359,21 +359,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#concept-coverage-across-all-categories" class="md-nav__link">
+  <a href="#concept-names" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Concept coverage across all categories
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-category-concept-variable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        From category → concept → variable
+        Concept names
       
     </span>
   </a>
@@ -448,6 +437,33 @@
   
 
     
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="stats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
   </ul>
 </nav>
                   </div>
@@ -486,10 +502,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example-the-conditiondisease-category" class="md-nav__link">
+  <a href="#classes" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Example: the Condition/Disease category
+        Classes
       
     </span>
   </a>
@@ -497,10 +513,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#concepts-per-category" class="md-nav__link">
+  <a href="#from-class-to-concept-to-variable" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Concepts per category
+        From class to concept to variable
       
     </span>
   </a>
@@ -508,21 +524,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#concept-coverage-across-all-categories" class="md-nav__link">
+  <a href="#concept-names" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Concept coverage across all categories
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#from-category-concept-variable" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        From category → concept → variable
+        Concept names
       
     </span>
   </a>
@@ -583,124 +588,128 @@
   
 
 
-<h1 id="about-bdc-variable-library">About BDC Variable Library</h1>
+<h1 id="bdc-variable-library">BDC Variable Library</h1>
 <p>A LinkML-based variable library for BioData Catalyst datasets.</p>
 <h2 id="background">Background</h2>
-<p>BDC Variable Library (BDCVL) clusters related variables into a single
-LinkML slot per concept, so <code>afib</code> is one slot with a comma-delimited
-<code>source_study</code> / <code>dataset_accession</code> / <code>variable_accession</code> annotation
-rather than separate near-duplicate records per study. These concepts are
-in turn clustered into category modules, such as Condition/Disease, Lab
-Measurement, and Treatment/Medication, spanning all contributing BioData
-Catalyst studies.</p>
-<h2 id="example-the-conditiondisease-category">Example: the Condition/Disease category</h2>
-<p>Each category module is a LinkML class whose slots are its concepts. Here's
-what that looks like for <code>ConditionDisease</code> — every concept as a row, every
-contributing cohort as a column:</p>
-<p><img alt="Condition/Disease concept coverage by cohort" src="img/cat-disease.png" /></p>
-<p>Reading this: <code>afib</code> is contributed by 9 of the 11 cohorts (CARDIA and
-SPIROMICS don't have it); <code>alpha1_antitrypsin</code> and <code>bronchitis_md</code> are
-LTRC-only, introduced when LTRC was added as an 11th study; <code>cvd</code> comes from
-MESA alone. Every other category module (Lab Measurement, Treatment/
-Medication, ...) follows the same shape — see the <a href="elements/">Schema</a>
-tab to browse any of them directly.</p>
-<h2 id="concepts-per-category">Concepts per category</h2>
-<p>And the same data collapsed one level further — total concept count per
-category, independent of cohort:</p>
-<p><img alt="Distribution of concepts across the 12 category modules" src="img/bdc-varlib-category-distribution.png" /></p>
-<p>Lab Measurement and Condition/Disease together account for over half the
-library; five categories (Family History, Mental Health/Psychosocial,
-Mortality/Outcome, Demographics/Socioeconomic, Study Administrative/
-Metadata) are intentionally small — they reflect how many <em>distinct</em>
-harmonized concepts the source repo defines in that category, not how
-important the category is.</p>
-<h2 id="concept-coverage-across-all-categories">Concept coverage across all categories</h2>
-<p>The same idea, rolled up: how many concepts <em>per category</em> each cohort
-contributes, across all 12 category modules at once.</p>
-<p><img alt="Harmonized concept presence matrix across all categories and cohorts" src="img/bdc-varlib-cohort-coverage-matrix.png" /></p>
-<p>A few things stand out here: Lab Measurement dominates for the cohorts with
-deep biomarker panels (FHS at 46, MESA at 48); SPIROMICS is the one cohort
-with zero Lab Measurement and zero Treatment/Medication concepts, unusual
-since every other cohort has double digits in Lab Measurement — consistent
-with SPIROMICS being a COPD-focused imaging/spirometry study rather than a
-biomarker-heavy cardiovascular cohort, while it still contributes 10
-Condition/Disease and 5 Vital Signs/Anthropometry concepts; and LTRC, being
-the newest addition, only shows up meaningfully in Condition/Disease (8) and
-Study Administrative/Metadata (4) so far.</p>
-<h2 id="from-category-concept-variable">From category → concept → variable</h2>
-<p>The library has three levels, and it's worth being explicit about what each
-one is:</p>
+<p>BDC Variable Library (BDCVL) groups related variables into a single
+LinkML slot per concept, so atrial fibrillation (<code>MONDO:0004981</code>) is one slot
+with a comma-delimited <code>source_study</code> / <code>dataset_accession</code> /
+<code>variable_accession</code> annotation, rather than separate near-duplicate records
+per study. Concepts are grouped into classes that follow the BioData Catalyst
+Harmonized Model (BDCHM), spanning all contributing BioData Catalyst studies.</p>
+<h2 id="classes">Classes</h2>
+<p>Each class is a BDCHM class, with its own module, and its slots are the
+concepts derived as that class. Counts per class and per study are on the
+<a href="stats/">Stats</a> page.</p>
+<table>
+<thead>
+<tr>
+<th>Class</th>
+<th>Concept identified by</th>
+<th>Module</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>Condition</code></td>
+<td><code>condition_concept</code></td>
+<td><code>bdc_varlib_condition.yaml</code></td>
+</tr>
+<tr>
+<td><code>MeasurementObservation</code></td>
+<td><code>observation_type</code></td>
+<td><code>bdc_varlib_measurement_observation.yaml</code></td>
+</tr>
+<tr>
+<td><code>Observation</code></td>
+<td><code>observation_type</code></td>
+<td><code>bdc_varlib_observation.yaml</code></td>
+</tr>
+<tr>
+<td><code>SdohObservation</code></td>
+<td><code>observation_type</code></td>
+<td><code>bdc_varlib_sdoh_observation.yaml</code></td>
+</tr>
+<tr>
+<td><code>DrugExposure</code></td>
+<td><code>drug_concept</code></td>
+<td><code>bdc_varlib_drug_exposure.yaml</code></td>
+</tr>
+<tr>
+<td><code>Procedure</code></td>
+<td><code>procedure_concept</code></td>
+<td><code>bdc_varlib_procedure.yaml</code></td>
+</tr>
+</tbody>
+</table>
+<p>Use the <a href="elements/">Schema</a> tab to browse every class and slot.</p>
+<h2 id="from-class-to-concept-to-variable">From class to concept to variable</h2>
+<p>The library has three levels:</p>
 <table>
 <thead>
 <tr>
 <th>Level</th>
 <th>LinkML construct</th>
 <th>Example</th>
-<th>What the three figures above show</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>Category</strong></td>
+<td><strong>Class</strong></td>
 <td>class</td>
-<td><code>ConditionDisease</code></td>
-<td>the bar chart, and the rows of the heatmap</td>
+<td><code>Condition</code></td>
 </tr>
 <tr>
 <td><strong>Concept</strong></td>
-<td>slot</td>
-<td><code>afib</code></td>
-<td>the rows of the Condition/Disease table, and the heatmap's cell counts</td>
+<td>slot, named after its ontology code</td>
+<td><code>mondo_0004981</code> (<code>afib</code>)</td>
 </tr>
 <tr>
 <td><strong>Variable</strong></td>
 <td>annotation entries on a slot</td>
-<td>one real dbGaP <code>phv</code>/<code>pht</code> pair</td>
-<td><em>not visualized above</em> — see below</td>
+<td>one dbGaP <code>phv</code> / <code>pht</code> pair</td>
 </tr>
 </tbody>
 </table>
-<p>A concept's slot doesn't stop at "which cohorts have it" — every
-contributing cohort can have <em>multiple</em> real dbGaP variables behind it (one
-per exam wave, hospital form, or follow-up survey that captured the same
-concept). Those are recorded as comma-delimited lists in the slot's
-annotations, not exploded into separate slots. For <code>afib</code> specifically:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">afib</span><span class="p">:</span>
+<p>A concept's slot records every contributing study, and each study can have
+several dbGaP variables behind it (one per exam wave, hospital form, or
+follow-up survey). Those are stored as comma-delimited lists in the slot's
+annotations rather than as separate slots. For atrial fibrillation:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">mondo_0004981</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">afib</span>
-<span class="w">  </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CLINICAL_DIAGNOSIS; PATIENT_SELF-REPORTED_CONDITION</span>
 <span class="w">  </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConditionStatusEnum</span>
 <span class="w">  </span><span class="nt">annotations</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">concept_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MONDO:0004981</span>
+<span class="w">    </span><span class="nt">concept_name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">afib</span>
 <span class="w">    </span><span class="nt">bdchm_class</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Condition</span>
 <span class="w">    </span><span class="nt">source_study</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ARIC, CHS, COPDGene, FHS, HCHS, JHS, MESA, WHI</span>
-<span class="w">    </span><span class="nt">dataset_accession</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pht004037, pht004038, pht004039, ...</span><span class="w"> </span><span class="c1"># 79 datasets total</span>
-<span class="w">    </span><span class="nt">variable_accession</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">phv00203303, phv00203306, phv00203309, ...</span><span class="w"> </span><span class="c1"># 103 variables total</span>
+<span class="w">    </span><span class="nt">dataset_accession</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pht004037, pht004038, pht004039, ...</span>
+<span class="w">    </span><span class="nt">variable_accession</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">phv00203303, phv00203306, phv00203309, ...</span>
+<span class="w">    </span><span class="nt">source_file</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ARIC-ingest/afib.yaml, CHS-ingest/afib.yaml, ...</span>
+<span class="w">  </span><span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MONDO:0004981</span>
 </code></pre></div>
-<p>That one slot represents <strong>79 real dbGaP datasets and 103 real dbGaP
-variables</strong>, pooled from 8 cohorts, into a single harmonized <code>afib</code> concept.
-Across all 181 concepts in the library, this is the norm rather than the
-exception for any concept collected across multiple exam cycles.</p>
-<p>There's no separate "variables" visual here on purpose — with 181 concepts
-each potentially backed by dozens of accessions, a chart at that resolution
-would just be the schema files themselves. The right way to explore that
-level is the <a href="elements/">Schema</a> tab, where every concept's slot
-page lists its full, real <code>dataset_accession</code> / <code>variable_accession</code> lists.</p>
+<p>One slot pools many dbGaP datasets and variables from several cohorts into a
+single concept. The <a href="elements/">Schema</a> tab lists the full
+<code>dataset_accession</code> and <code>variable_accession</code> lists on each slot page.</p>
+<h2 id="concept-names">Concept names</h2>
+<p>Slots are identified by ontology code (<code>concept_id</code>, also in
+<code>exact_mappings</code>). The <code>concept_name</code> shown next to it is currently taken from
+the source file name (for example <code>afib</code>, <code>hist_cor_angio</code>) and will be
+replaced with ontology labels in a later release.</p>
 <h2 id="structure">Structure</h2>
 <ul>
-<li><code>bdc_varlib.yaml</code> — the umbrella schema; imports every category module.</li>
-<li><code>bdc_varlib_common.yaml</code> — enums shared across categories (e.g.
-  <code>ConditionStatusEnum</code>), so every category module is self-contained and can
-  be loaded standalone, not only via the umbrella.</li>
-<li><code>bdc_varlib_&lt;category&gt;.yaml</code> — one module per biomedical category
-  (Condition/Disease, Lab Measurement, Treatment/Medication, ...); see the
-  <a href="./">Home page</a> for the full module list.</li>
+<li><code>bdc_varlib.yaml</code>: the umbrella schema; imports every class module.</li>
+<li><code>bdc_varlib_common.yaml</code>: enums shared across classes (for example
+  <code>ConditionStatusEnum</code>), so every module is self-contained and can be loaded
+  standalone, not only via the umbrella.</li>
+<li><code>bdc_varlib_&lt;class&gt;.yaml</code>: one module per BDCHM class.</li>
 </ul>
 <h2 id="provenance">Provenance</h2>
-<p>Every variable's <code>annotations</code> record exactly which studies, dbGaP datasets
-(<code>pht</code>), and dbGaP variables (<code>phv</code>) it was derived from, so any slot can be
-traced back to its source transform file. Where a real ontology mapping
-exists in the source data (MONDO for conditions, RxCUI for medications, OMOP
-for coded categorical values), it's carried through as a real LinkML
-<code>exact_mappings</code> entry rather than free text.</p>
+<p>Every slot's <code>annotations</code> record exactly which studies, dbGaP datasets
+(<code>pht</code>), and dbGaP variables (<code>phv</code>) it was derived from, and the source file
+it came from. The concept code (MONDO, OBA, OMOP, RxCUI, ATC, HP and others)
+is carried through as a LinkML <code>exact_mappings</code> entry.</p>
 <h2 id="source">Source</h2>
 <p>Generated from
 <a href="https://github.com/RTIInternational/NHLBI-BDC-DMC-HV/tree/main/priority_variables_transform">RTIInternational/NHLBI-BDC-DMC-HV</a>.</p>
