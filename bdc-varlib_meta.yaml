@@ -1,0 +1,547 @@
+id: https://w3id.org/bdc/varlib/meta
+name: bdc_varlib_meta
+title: BDC Variable Library meta-model
+version: 1.0.0
+description: >-
+  Meta-model of the BDC Variable Library. It describes one library: the
+  integrated concepts of one CURIE prefix (a concept code derived as one BDCHM
+  class), each with the dbGaP source variables that feed it (field names as in
+  linkml/bdc-variable-library's SingleContinuousVariable and
+  SingleCategoricalVariable) and how the priority variables spec uses them.
+  scripts/build_bdc_varlib.py builds one library per prefix from
+  https://github.com/RTIInternational/NHLBI-BDC-DMC-HV/tree/main/priority_variables_transform,
+  validates it against this meta-model, and writes it out as a LinkML
+  sub-schema (src/bdc_varlib/schema/bdc_varlib_<prefix>.yaml) for documentation.
+license: Apache-2.0
+see_also:
+  - https://github.com/RTIInternational/NHLBI-BDC-DMC-HV/tree/main/priority_variables_transform
+  - https://github.com/RTIInternational/NHLBI-BDC-DMC-HM
+  - https://github.com/linkml/bdc-variable-library
+
+prefixes:
+  linkml: https://w3id.org/linkml/
+  bdcvl: https://w3id.org/bdc/varlib/
+  bdchm: https://w3id.org/bdchm/
+  bdcvarlib: https://w3id.org/linkml/bdc-variable-library/
+  dbgap: https://www.ncbi.nlm.nih.gov/gap/advanced_search/?TERM=
+  skos: http://www.w3.org/2004/02/skos/core#
+  MONDO: http://purl.obolibrary.org/obo/MONDO_
+  OBA: http://purl.obolibrary.org/obo/OBA_
+  HP: http://purl.obolibrary.org/obo/HP_
+  OMOP: https://athena.ohdsi.org/search-terms/terms/
+  RxCUI: https://mor.nlm.nih.gov/RxNav/search?searchBy=RXCUI&searchTerm=
+  ATC: https://www.whocc.no/atc_ddd_index/?code=
+  NDFRT: http://purl.bioontology.org/ontology/NDFRT/
+  VANDF: http://purl.bioontology.org/ontology/VANDF/
+  MeSH: http://id.nlm.nih.gov/mesh/
+  LOINC: https://loinc.org/
+  UCUM: https://units-of-measurement.org/
+
+default_prefix: bdcvl
+default_range: string
+
+imports:
+  - linkml:types
+
+classes:
+
+  VariableLibrary:
+    tree_root: true
+    description: >-
+      One library file, holding the concepts of one CURIE prefix
+      (bdc_varlib_mondo.yaml, bdc_varlib_hpo.yaml, ...) and every study they
+      reference.
+    slots:
+      - schema_version
+      - library_version
+      - curie_prefix
+      - source
+      - studies
+      - integrated_concepts
+
+  SourceRelease:
+    description: The exact source the library was generated from.
+    slots:
+      - repository
+      - commit
+      - path
+
+  Study:
+    description: A dbGaP study, read from the ResearchStudy spec in its ingest folder.
+    slot_usage:
+      id:
+        identifier: true
+        description: bdchm:Study/<phs>, for example bdchm:Study/phs000280.
+    slots:
+      - id
+      - accession_number
+      - study_version
+      - study_name
+      - study_title
+      - ingest_folder
+
+  IntegratedConcept:
+    description: >-
+      One concept code derived as one BDCHM class, with every dbGaP variable
+      that feeds it. Identified by concept_id together with bdchm_class: the
+      same code can be derived as two classes (for example OMOP:4282779 as
+      both MeasurementObservation and Observation).
+    slots:
+      - concept_id
+      - concept_name
+      - concept_name_source
+      - bdchm_class
+      - bdchm_concept_slot
+      - bdchm_value_slot
+      - value_range
+      - ontology_mappings
+      - source_names
+      - source_variables
+
+  SourceVariable:
+    description: >-
+      One dbGaP variable that feeds the concept, listed once per concept, with
+      how the priority variables spec uses it. Field names follow
+      SingleContinuousVariable and SingleCategoricalVariable in
+      linkml/bdc-variable-library. The dbGaP fields are filled only by an
+      optional enrichment step. The same variable can appear under several
+      concepts.
+    exact_mappings:
+      - bdcvarlib:SingleContinuousVariable
+      - bdcvarlib:SingleCategoricalVariable
+    slots:
+      # identity (from the specs)
+      - id
+      - associated_study
+      - variable_description
+      - source_id
+      - file_id
+      # dbGaP enrichment (optional, later)
+      - file_name
+      - variable_name
+      - source_variable_description
+      - data_type
+      - unit
+      - minimum_value
+      - maximum_value
+      - coded_values
+      # how the spec uses the variable (from the specs)
+      - variable_role
+      - bdchm_slot
+      - visit
+      - bdchm_provenance
+      - evidence
+      - method
+      - harmonized_unit
+      - value_mappings
+      - derivation_expression
+      - concept_expression
+      - source_file
+      - source_index
+      - additional_derivations
+
+  AdditionalDerivation:
+    description: >-
+      A second spec block that uses the same variable for the same concept
+      but differently, for example with other value mappings. Present only
+      in those rare cases; the variable's own fields describe the first block.
+    slots:
+      - visit
+      - bdchm_provenance
+      - evidence
+      - method
+      - harmonized_unit
+      - value_mappings
+      - derivation_expression
+      - concept_expression
+      - source_file
+      - source_index
+
+  OntologyMapping:
+    description: A mapping from the concept to a term in another ontology.
+    slots:
+      - ontology_id
+      - mapping_predicate
+
+  ValueMapping:
+    description: How one source value is translated to a harmonized value.
+    slots:
+      - source_value
+      - harmonized_value
+
+  CodedValue:
+    description: >-
+      A code a dbGaP variable uses and its meaning, as in the dbGaP data
+      dictionary (bdc-variable-library EnumValue).
+    exact_mappings:
+      - bdcvarlib:EnumValue
+    slots:
+      - indicator_char
+      - indicator_meaning
+
+slots:
+
+  # ---- library envelope -------------------------------------------------
+
+  schema_version:
+    description: Version of this schema the file conforms to.
+    range: string
+    required: true
+    pattern: "^\\d+\\.\\d+\\.\\d+$"
+
+  library_version:
+    description: Version of the generated library content.
+    range: string
+    required: true
+
+  curie_prefix:
+    description: >-
+      CURIE prefix shared by every concept in this file, for example MONDO;
+      "other" for codes that are not CURIEs.
+    range: string
+    required: true
+
+  source:
+    description: Source release the file was generated from.
+    range: SourceRelease
+    required: true
+    inlined: true
+
+  repository:
+    description: Source GitHub repository as owner/name.
+    range: string
+    required: true
+    pattern: "^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$"
+
+  commit:
+    description: Full git commit SHA of the source repository.
+    range: string
+    required: true
+    pattern: "^[0-9a-f]{40}$"
+
+  path:
+    description: Folder within the source repository.
+    range: string
+    required: true
+
+  studies:
+    description: Studies referenced in this file.
+    range: Study
+    multivalued: true
+    required: true
+    inlined_as_list: true
+
+  integrated_concepts:
+    description: Concepts in this file.
+    range: IntegratedConcept
+    multivalued: true
+    required: true
+    inlined_as_list: true
+
+  # ---- identifiers ---------------------------------------------------------
+
+  id:
+    description: >-
+      bdchm:Study/<phs> for a study (its identifier); dbgap:<phv> for a source
+      variable.
+    range: uriorcurie
+    required: true
+
+  # ---- study ---------------------------------------------------------------
+
+  accession_number:
+    description: dbGaP study accession, for example phs000280.
+    range: string
+    required: true
+    pattern: "^phs\\d{6}$"
+
+  study_version:
+    description: dbGaP study version used by the specs, for example 8.
+    range: string
+
+  study_name:
+    description: Short study name, for example ARIC.
+    range: string
+    required: true
+
+  study_title:
+    description: Full study title.
+    range: string
+
+  ingest_folder:
+    description: Source ingest folder, for example ARIC-ingest.
+    range: string
+    required: true
+
+  # ---- concept -------------------------------------------------------------
+
+  concept_id:
+    description: >-
+      Code the spec puts in the BDCHM concept slot, used as is, for example
+      MONDO:0005044 or OMOP:4152194.
+    range: uriorcurie
+    required: true
+
+  concept_name:
+    description: >-
+      Concept name. Not in the priority variables specs, which carry only
+      codes; filled by an optional enrichment step from the ontology release.
+    range: string
+
+  concept_name_source:
+    description: Where concept_name came from, for example "MONDO 2026-11-03".
+    range: string
+
+  bdchm_class:
+    description: BDCHM class the specs derive for this concept.
+    range: BdchmClassEnum
+    required: true
+
+  bdchm_concept_slot:
+    description: >-
+      BDCHM slot carrying the concept code, for example condition_concept or
+      observation_type. With bdchm_class and concept_id it locates the
+      concept in harmonized BDCHM data.
+    range: string
+    required: true
+
+  bdchm_value_slot:
+    description: BDCHM slot receiving the harmonized value, for example condition_status.
+    range: string
+
+  value_range:
+    description: >-
+      BDCHM range of bdchm_value_slot: an enum such as HistoricalStatusEnum,
+      or a datatype such as decimal.
+    range: string
+
+  ontology_mappings:
+    description: >-
+      Optional mappings to terms in other ontologies. Not in the priority
+      variables specs; concept_id itself is not repeated here.
+    range: OntologyMapping
+    multivalued: true
+    inlined_as_list: true
+
+  source_names:
+    description: Spec file names the concept comes from, without .yaml, for example blood_pressure.
+    range: string
+    multivalued: true
+
+  source_variables:
+    description: The dbGaP variables that feed the concept, once each.
+    range: SourceVariable
+    multivalued: true
+    required: true
+    inlined_as_list: true
+    minimum_cardinality: 1
+
+
+  # ---- source variable (bdc-variable-library field names) ----------------
+
+  associated_study:
+    description: Study the variable belongs to; references a Study in this file.
+    range: Study
+    required: true
+    inlined: false
+
+  variable_description:
+    description: >-
+      What the variable is used for in the derivations, from the spec, for
+      example "Source for Quantity.value_decimal" or
+      "Source for associated_participant".
+    range: string
+
+  source_id:
+    description: dbGaP variable accession, for example phv00202843.
+    range: string
+    required: true
+    pattern: "^phv\\d{8}$"
+
+  file_id:
+    description: dbGaP table accession the variable is read from, for example pht004027.
+    range: string
+    pattern: "^pht\\d{6}$"
+
+  file_name:
+    description: dbGaP table name, for example ABI04. dbGaP enrichment only.
+    range: string
+
+  variable_name:
+    description: dbGaP variable name, for example ANKSBP13. dbGaP enrichment only.
+    range: string
+
+  source_variable_description:
+    description: dbGaP variable description. dbGaP enrichment only.
+    range: string
+
+  data_type:
+    description: dbGaP data type. dbGaP enrichment only.
+    range: DataTypeEnum
+
+  unit:
+    description: Unit of the dbGaP variable. dbGaP enrichment only.
+    range: string
+
+  variable_role:
+    description: >-
+      value when the variable's values become the harmonized value;
+      supporting when the spec reads it for something else, such as the
+      participant id or age.
+    range: VariableRoleEnum
+    required: true
+
+  bdchm_slot:
+    description: >-
+      BDCHM slot the variable feeds, for example condition_status,
+      value_quantity or associated_participant.
+    range: string
+    required: true
+
+  harmonized_unit:
+    description: Unit the spec sets for the harmonized value, for example mm[Hg].
+    range: string
+
+  additional_derivations:
+    description: Other spec blocks that use this variable differently for the same concept.
+    range: AdditionalDerivation
+    multivalued: true
+    inlined_as_list: true
+
+  minimum_value:
+    description: Minimum value in dbGaP. dbGaP enrichment only.
+    range: decimal
+
+  maximum_value:
+    description: Maximum value in dbGaP. dbGaP enrichment only.
+    range: decimal
+
+  coded_values:
+    description: Codes the variable uses and their meanings. dbGaP enrichment only.
+    range: CodedValue
+    multivalued: true
+    inlined_as_list: true
+
+  indicator_char:
+    description: The code, for example 1.
+    range: string
+    required: true
+
+  indicator_meaning:
+    description: The code's meaning in dbGaP, for example Yes.
+    range: string
+
+  # ---- derivation ----------------------------------------------------------
+
+  source_file:
+    description: >-
+      Spec file the usage comes from, for example
+      ARIC-ingest/blood_pressure.yaml. Set for value variables.
+    range: string
+
+  source_index:
+    description: Zero-based position of the block in source_file.
+    range: integer
+    minimum_value: 0
+
+  visit:
+    description: >-
+      Visit, exam or form named in the spec's associated_visit, for example
+      ARIC EXAM 1. Several when the spec picks the visit with case().
+    range: string
+    multivalued: true
+
+  bdchm_provenance:
+    description: Value of the BDCHM *_provenance slot, for example DEATH_RECORD.
+    range: string
+
+  evidence:
+    description: associated_evidence, for example "Hypertension, definition 4".
+    range: string
+
+  method:
+    description: method_type, for example "ABI form measurement".
+    range: string
+
+
+
+  value_mappings:
+    description: Translation of source values to harmonized values.
+    range: ValueMapping
+    multivalued: true
+    inlined_as_list: true
+
+  derivation_expression:
+    description: Expression computing the value when it is not read directly, for example "{phv00516590} * 2.54".
+    range: string
+
+  concept_expression:
+    description: >-
+      Present when the spec picks the concept per participant (a case()
+      expression or a column mapping); the variable feeds this concept only
+      for matching rows.
+    range: string
+
+  # ---- mappings --------------------------------------------------------------
+
+  ontology_id:
+    description: Ontology term the concept maps to.
+    range: uriorcurie
+    required: true
+
+  mapping_predicate:
+    description: SKOS mapping predicate.
+    range: MappingPredicateEnum
+    required: true
+
+  source_value:
+    description: Value as it appears in the study data.
+    range: string
+    required: true
+
+  harmonized_value:
+    description: Value written to the BDCHM slot.
+    range: string
+    required: true
+
+enums:
+
+  VariableRoleEnum:
+    description: How a spec uses a source variable.
+    permissible_values:
+      value:
+        description: Its values become the harmonized value.
+      supporting:
+        description: Read for something else, such as the participant id or age.
+
+  BdchmClassEnum:
+    description: BDCHM classes whose derivations identify a concept.
+    permissible_values:
+      Condition: {meaning: bdchm:Condition}
+      MeasurementObservation: {meaning: bdchm:MeasurementObservation}
+      Observation: {meaning: bdchm:Observation}
+      SdohObservation: {meaning: bdchm:SdohObservation}
+      DrugExposure: {meaning: bdchm:DrugExposure}
+      Procedure: {meaning: bdchm:Procedure}
+
+  MappingPredicateEnum:
+    description: SKOS mapping predicates.
+    permissible_values:
+      skos:exactMatch: {meaning: skos:exactMatch}
+      skos:closeMatch: {meaning: skos:closeMatch}
+      skos:broadMatch: {meaning: skos:broadMatch}
+      skos:narrowMatch: {meaning: skos:narrowMatch}
+      skos:relatedMatch: {meaning: skos:relatedMatch}
+
+  DataTypeEnum:
+    description: dbGaP data types, as in bdc-variable-library DataTypeEnum.
+    permissible_values:
+      decimal: {}
+      integer: {}
+      enum: {}
+      boolean: {}
+      string: {}
+      numeric: {}
+      code: {}
+      uriorcurie: {}
+      identifier: {}
