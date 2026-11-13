@@ -1,0 +1,817 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://tis-lab.github.io/BDC-VarLib/elements/oba_1001087/">
+      
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>Slot: hrtrt, hrt_rt (oba_1001087) - BDC Variable Library</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+      
+
+
+    
+    
+
+      
+    
+<script src="../../assets/pymdownx-extras/material-extra-theme-2ek1P7jT.js" type="text/javascript"></script>
+<script src="../../assets/pymdownx-extras/material-extra-3rdparty-BUCF4rjN.js" type="text/javascript"></script>
+
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../css/ansi-colours.css">
+    
+      <link rel="stylesheet" href="../../css/jupyter-cells.css">
+    
+      <link rel="stylesheet" href="../../css/pandas-dataframe.css">
+    
+      <link rel="stylesheet" href="../../assets/pymdownx-extras/extra-c6ab11540a.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#slot-hrtrt-hrt_rt-oba_1001087" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+
+<header class="md-header" data-md-component="header">
+  <nav
+    class="md-header__inner md-grid"
+    aria-label="header.title"
+  >
+    <a
+      href="https://tis-lab.github.io/BDC-VarLib/"
+      title="BDC Variable Library"
+      class="md-header__button md-logo"
+      aria-label="BDC Variable Library"
+    >
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            BDC Variable Library
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Slot: hrtrt, hrt_rt (oba_1001087)
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="md-header__options">
+      <div class="md-header-nav__scheme md-header-nav__button md-source__icon md-icon">
+          <a
+            href="javascript:toggleScheme();"
+            title="Light mode"
+            class="light-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="Dark mode"
+            class="dark-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+          </a>
+          <a
+            href="javascript:toggleScheme();"
+            title="System preference"
+            class="system-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M7.5 2c-1.79 1.15-3 3.18-3 5.5s1.21 4.35 3.03 5.5C4.46 13 2 10.54 2 7.5A5.5 5.5 0 0 1 7.5 2m11.57 1.5 1.43 1.43L4.93 20.5 3.5 19.07zm-6.18 2.43L11.41 5 9.97 6l.42-1.7L9 3.24l1.75-.12.58-1.65L12 3.1l1.73.03-1.35 1.13zm-3.3 3.61-1.16-.73-1.12.78.34-1.32-1.09-.83 1.36-.09.45-1.29.51 1.27 1.36.03-1.05.87zM19 13.5a5.5 5.5 0 0 1-5.5 5.5c-1.22 0-2.35-.4-3.26-1.07l7.69-7.69c.67.91 1.07 2.04 1.07 3.26m-4.4 6.58 2.77-1.15-.24 3.35zm4.33-2.7 1.15-2.77 2.2 2.54zm1.15-4.96-1.14-2.78 3.34.24zM9.63 18.93l2.77 1.15-2.53 2.19z"/></svg>
+          </a>
+           <a
+            href="javascript:toggleScheme();"
+            title="Unknown scheme"
+            class="unknown-mode"
+          >
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m15.07 11.25-.9.92C13.45 12.89 13 13.5 13 15h-2v-.5c0-1.11.45-2.11 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41a2 2 0 0 0-2-2 2 2 0 0 0-2 2H8a4 4 0 0 1 4-4 4 4 0 0 1 4 4 3.2 3.2 0 0 1-.93 2.25M13 19h-2v-2h2M12 2A10 10 0 0 0 2 12a10 10 0 0 0 10 10 10 10 0 0 0 10-10c0-5.53-4.5-10-10-10"/></svg>
+          </a>
+      </div>
+    </div>
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/tis-lab/BDC-VarLib" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+      </div>
+    
+  </nav>
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="BDC Variable Library" class="md-nav__button md-logo" aria-label="BDC Variable Library" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m19 2-5 4.5v11l5-4.5zM6.5 5C4.55 5 2.45 5.4 1 6.5v14.66c0 .25.25.5.5.5.1 0 .15-.07.25-.07 1.35-.65 3.3-1.09 4.75-1.09 1.95 0 4.05.4 5.5 1.5 1.35-.85 3.8-1.5 5.5-1.5 1.65 0 3.35.31 4.75 1.06.1.05.15.03.25.03.25 0 .5-.25.5-.5V6.5c-.6-.45-1.25-.75-2-1V19c-1.1-.35-2.3-.5-3.5-.5-1.7 0-4.15.65-5.5 1.5V6.5C10.55 5.4 8.45 5 6.5 5"/></svg>
+
+    </a>
+    BDC Variable Library
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/tis-lab/BDC-VarLib" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M439.6 236.1 244 40.5c-5.4-5.5-12.8-8.5-20.4-8.5s-15 3-20.4 8.4L162.5 81l51.5 51.5c27.1-9.1 52.7 16.8 43.4 43.7l49.7 49.7c34.2-11.8 61.2 31 35.5 56.7-26.5 26.5-70.2-2.9-56-37.3L240.3 199v121.9c25.3 12.5 22.3 41.8 9.1 55-6.4 6.4-15.2 10.1-24.3 10.1s-17.8-3.6-24.3-10.1c-17.6-17.6-11.1-46.9 11.2-56v-123c-20.8-8.5-24.6-30.7-18.6-45L142.6 101 8.5 235.1C3 240.6 0 247.9 0 255.5s3 15 8.5 20.4l195.6 195.7c5.4 5.4 12.7 8.4 20.4 8.4s15-3 20.4-8.4l194.7-194.7c5.4-5.4 8.4-12.8 8.4-20.4s-3-15-8.4-20.4"/></svg>
+  </div>
+  <div class="md-source__repository">
+    GitHub
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Home
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Schema
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../stats/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Stats
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#applicable-classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Applicable Classes
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Properties
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Properties">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#type-and-range" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Type and Range
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cardinality-and-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Cardinality and Requirements
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#annotations" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Annotations
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Mappings
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+  
+                  
+
+
+  
+  
+
+
+<h1 id="slot-hrtrt-hrt_rt-oba_1001087">Slot: hrtrt, hrt_rt (oba_1001087)</h1>
+<p><em>30 second heart rate; 30 second heart rate after chair stands; 30 second heart rate before chair stands; 30 second heart rate standing; 30 second heart rate supine; 60 second; 60 second heart rate; Arterial Tonometry; Average Heart rate during brachial, radial and femoral tonometry; Average heart rate during brachial, radial and femoral tonometry; Brachial Vascular Reactivity Test; Cardiac Magnetic Resonance Imaging; Electrocardiogram; Electrocardiogram, atrial rate; Electrocardiogram, ventricular rate; HRV spectral mean; Heart rate during carotid tonometry; Peripheral Arterial Tone; Post-repeated chair stand 30 second heart rate; atrial; average; average (Mmode_LVandRV_HR_avg); deflation; from machine; mitral doppler; recovery 3 min; recovery 5 min; recovery immediate; resting vital signs; resting, p-hyvent; resting, sit; seated; stage 1; stage 2 - peak exercise; standing; supine; ventricular</em></p>
+<div>
+<p>URI: <a href="https://w3id.org/bdc/varlib/oba_1001087">bdcvl:oba_1001087</a></p>
+<!-- no inheritance hierarchy -->
+<h2 id="applicable-classes">Applicable Classes</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+<th>Modifies Slot</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
+<td>Concepts derived as BDCHM MeasurementObservation</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<h3 id="type-and-range">Type and Range</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Range</td>
+<td><a href="../Float/">Float</a></td>
+</tr>
+<tr>
+<td>Domain Of</td>
+<td><a href="../MeasurementObservation/">MeasurementObservation</a></td>
+</tr>
+</tbody>
+</table>
+<h3 id="cardinality-and-requirements">Cardinality and Requirements</h3>
+<table>
+<thead>
+<tr>
+<th>Property</th>
+<th>Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<details>
+<summary>Additional Constraints</summary>
+**Unit:**
+
+| Property | Value |
+| --- | --- |
+| ucum_code | {beats}/min |
+
+</details>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="annotations">Annotations</h3>
+<table>
+<thead>
+<tr>
+<th>property</th>
+<th>value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>concept_id</td>
+<td>OBA:1001087</td>
+</tr>
+<tr>
+<td>concept_name</td>
+<td>hrtrt, hrt_rt</td>
+</tr>
+<tr>
+<td>bdchm_class</td>
+<td>MeasurementObservation</td>
+</tr>
+<tr>
+<td>source_study</td>
+<td>ARIC, CARDIA, CHS, COPDGene, FHS, HCHS, JHS, MESA, SPIROMICS, WHI</td>
+</tr>
+<tr>
+<td>dataset_accession</td>
+<td>pht004194, pht004195, pht004084, pht012824, pht012822, pht004088, pht004232, pht006415, pht004085, pht004079, pht004087, pht004073, pht004076, pht004044, pht004083, pht004071, pht004074, pht004077, pht012819, pht004102, pht004078, pht004072, pht004045, pht012820, pht004234, pht006414, pht004075, pht012823, pht004086, pht004233, pht006436, pht004089, pht004080, pht012821, pht004231, pht001593, pht001747, pht001860, pht001684, pht001450, pht001451, pht001452, pht001474, pht001475, pht001488, pht001489, pht001490, pht001491, pht001492, pht001493, pht001494, pht001495, pht003700, pht002239, pht000028, pht000029, pht000031, pht000194, pht000195, pht000196, pht000197, pht000209, pht000210, pht000211, pht000394, pht000673, pht000692, pht000748, pht000830, pht002572, pht002573, pht005141, pht006018, pht004715, pht008731, pht008782, pht001955, pht008729, pht001974, pht008783, pht001111, pht001116, pht001118, pht001119, pht001120, pht002195, pht003086, pht003091, pht013308, pht006223, pht002118</td>
+</tr>
+<tr>
+<td>variable_accession</td>
+<td>phv00210327, phv00210353, phv00206256, phv00515687, phv00514035, phv00206495, phv00216047, phv00294580, phv00206406, phv00205915, phv00206471, phv00205564, phv00205722, phv00203507, phv00206107, phv00205414, phv00205617, phv00205779, phv00512549, phv00206854, phv00205820, phv00205505, phv00203655, phv00512580, phv00206405, phv00216881, phv00294518, phv00205674, phv00205900, phv00514861, phv00203656, phv00206444, phv00216464, phv00206255, phv00295777, phv00203508, phv00206521, phv00205946, phv00513210, phv00206106, phv00215630, phv00114016, phv00114024, phv00114012, phv00117848, phv00114040, phv00117822, phv00121046, phv00114028, phv00117864, phv00114036, phv00117856, phv00114009, phv00117860, phv00117832, phv00117836, phv00117840, phv00117844, phv00116216, phv00114020, phv00117852, phv00121035, phv00114032, phv00121041, phv00114006, phv00117829, phv00099357, phv00099427, phv00099429, phv00099700, phv00100054, phv00100389, phv00100396, phv00100399, phv00101728, phv00101730, phv00101754, phv00101773, phv00101969, phv00102470, phv00102497, phv00102548, phv00102550, phv00102591, phv00104009, phv00104315, phv00104326, phv00104686, phv00104740, phv00104742, phv00104964, phv00104980, phv00105423, phv00105839, phv00105841, phv00106347, phv00106374, phv00106785, phv00106817, phv00106824, phv00106963, phv00106965, phv00107286, phv00107310, phv00107483, phv00107485, phv00107753, phv00108162, phv00108186, phv00108484, phv00108516, phv00108784, phv00108926, phv00109248, phv00109303, phv00109305, phv00109315, phv00109861, phv00110268, phv00110316, phv00110318, phv00110498, phv00199731, phv00199734, phv00199737, phv00199740, phv00199743, phv00199746, phv00199749, phv00199752, phv00199755, phv00199758, phv00199761, phv00199764, phv00199767, phv00199770, phv00199773, phv00199776, phv00159584, phv00006839, phv00007263, phv00008162, phv00008174, phv00008186, phv00008198, phv00008210, phv00008222, phv00008234, phv00008246, phv00008258, phv00008271, phv00008283, phv00008295, phv00008307, phv00008319, phv00008331, phv00024408, phv00024409, phv00024410, phv00024411, phv00024477, phv00024478, phv00024486, phv00024494, phv00024534, phv00024549, phv00024764, phv00024765, phv00024796, phv00024797, phv00024804, phv00024805, phv00024810, phv00024811, phv00024852, phv00055184, phv00055191, phv00055203, phv00055210, phv00055222, phv00055229, phv00055236, phv00066705, phv00070718, phv00072652, phv00073814, phv00167051, phv00167182, phv00254794, phv00276850, phv00226274, phv00258056, phv00401441, phv00403806, phv00127504, phv00401176, phv00128364, phv00403844, phv00403850, phv00127511, phv00403853, phv00082700, phv00083401, phv00083405, phv00083408, phv00083412, phv00085482, phv00084546, phv00086227, phv00086239, phv00086240, phv00086241, phv00086710, phv00086723, phv00086724, phv00086725, phv00087032, phv00087045, phv00087046, phv00087047, phv00159096, phv00174882, phv00174883, phv00175589, phv00175593, phv00175596, phv00175604, phv00175755, phv00175758, phv00175761, phv00175764, phv00176280, phv00176305, phv00176306, phv00177023, phv00177027, phv00177030, phv00177038, phv00177189, phv00177192, phv00177195, phv00177198, phv00528714, phv00283538, phv00155154</td>
+</tr>
+<tr>
+<td>source_file</td>
+<td>ARIC-ingest/hrtrt.yaml, CARDIA-ingest/hrtrt.yaml, CHS-ingest/hrtrt.yaml, COPDGene-ingest/hrt_rt.yaml, FHS-ingest/hrtrt.yaml, HCHS-ingest/hrtrt.yaml, JHS-ingest/hrtrt.yaml, MESA-ingest/hrtrt.yaml, SPIROMICS-ingest/hrt_rt.yaml, WHI-ingest/hrtrt.yaml</td>
+</tr>
+<tr>
+<td>unit</td>
+<td>{beats}/min</td>
+</tr>
+</tbody>
+</table>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://w3id.org/bdc/varlib">https://w3id.org/bdc/varlib</a></li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>bdcvl:oba_1001087</td>
+</tr>
+<tr>
+<td>native</td>
+<td>bdcvl:oba_1001087</td>
+</tr>
+<tr>
+<td>exact</td>
+<td>OBA:1001087</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
+<details>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">oba_1001087</span>
+<span class="nt">annotations</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">concept_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_id</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OBA:1001087</span>
+<span class="w">  </span><span class="nt">concept_name</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_name</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hrtrt, hrt_rt</span>
+<span class="w">  </span><span class="nt">bdchm_class</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bdchm_class</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MeasurementObservation</span>
+<span class="w">  </span><span class="nt">source_study</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">source_study</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ARIC, CARDIA, CHS, COPDGene, FHS, HCHS, JHS, MESA, SPIROMICS, WHI</span>
+<span class="w">  </span><span class="nt">dataset_accession</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dataset_accession</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pht004194, pht004195, pht004084, pht012824, pht012822, pht004088, pht004232,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht006415, pht004085, pht004079, pht004087, pht004073, pht004076, pht004044,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht004083, pht004071, pht004074, pht004077, pht012819, pht004102, pht004078,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht004072, pht004045, pht012820, pht004234, pht006414, pht004075, pht012823,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht004086, pht004233, pht006436, pht004089, pht004080, pht012821, pht004231,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht001593, pht001747, pht001860, pht001684, pht001450, pht001451, pht001452,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht001474, pht001475, pht001488, pht001489, pht001490, pht001491, pht001492,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht001493, pht001494, pht001495, pht003700, pht002239, pht000028, pht000029,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht000031, pht000194, pht000195, pht000196, pht000197, pht000209, pht000210,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht000211, pht000394, pht000673, pht000692, pht000748, pht000830, pht002572,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht002573, pht005141, pht006018, pht004715, pht008731, pht008782, pht001955,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht008729, pht001974, pht008783, pht001111, pht001116, pht001118, pht001119,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">pht001120, pht002195, pht003086, pht003091, pht013308, pht006223, pht002118</span>
+<span class="w">  </span><span class="nt">variable_accession</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">variable_accession</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">phv00210327, phv00210353, phv00206256, phv00515687, phv00514035, phv00206495,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00216047, phv00294580, phv00206406, phv00205915, phv00206471, phv00205564,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00205722, phv00203507, phv00206107, phv00205414, phv00205617, phv00205779,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00512549, phv00206854, phv00205820, phv00205505, phv00203655, phv00512580,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00206405, phv00216881, phv00294518, phv00205674, phv00205900, phv00514861,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00203656, phv00206444, phv00216464, phv00206255, phv00295777, phv00203508,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00206521, phv00205946, phv00513210, phv00206106, phv00215630, phv00114016,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00114024, phv00114012, phv00117848, phv00114040, phv00117822, phv00121046,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00114028, phv00117864, phv00114036, phv00117856, phv00114009, phv00117860,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00117832, phv00117836, phv00117840, phv00117844, phv00116216, phv00114020,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00117852, phv00121035, phv00114032, phv00121041, phv00114006, phv00117829,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00099357, phv00099427, phv00099429, phv00099700, phv00100054, phv00100389,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00100396, phv00100399, phv00101728, phv00101730, phv00101754, phv00101773,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00101969, phv00102470, phv00102497, phv00102548, phv00102550, phv00102591,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00104009, phv00104315, phv00104326, phv00104686, phv00104740, phv00104742,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00104964, phv00104980, phv00105423, phv00105839, phv00105841, phv00106347,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00106374, phv00106785, phv00106817, phv00106824, phv00106963, phv00106965,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00107286, phv00107310, phv00107483, phv00107485, phv00107753, phv00108162,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00108186, phv00108484, phv00108516, phv00108784, phv00108926, phv00109248,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00109303, phv00109305, phv00109315, phv00109861, phv00110268, phv00110316,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00110318, phv00110498, phv00199731, phv00199734, phv00199737, phv00199740,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00199743, phv00199746, phv00199749, phv00199752, phv00199755, phv00199758,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00199761, phv00199764, phv00199767, phv00199770, phv00199773, phv00199776,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00159584, phv00006839, phv00007263, phv00008162, phv00008174, phv00008186,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00008198, phv00008210, phv00008222, phv00008234, phv00008246, phv00008258,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00008271, phv00008283, phv00008295, phv00008307, phv00008319, phv00008331,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00024408, phv00024409, phv00024410, phv00024411, phv00024477, phv00024478,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00024486, phv00024494, phv00024534, phv00024549, phv00024764, phv00024765,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00024796, phv00024797, phv00024804, phv00024805, phv00024810, phv00024811,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00024852, phv00055184, phv00055191, phv00055203, phv00055210, phv00055222,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00055229, phv00055236, phv00066705, phv00070718, phv00072652, phv00073814,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00167051, phv00167182, phv00254794, phv00276850, phv00226274, phv00258056,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00401441, phv00403806, phv00127504, phv00401176, phv00128364, phv00403844,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00403850, phv00127511, phv00403853, phv00082700, phv00083401, phv00083405,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00083408, phv00083412, phv00085482, phv00084546, phv00086227, phv00086239,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00086240, phv00086241, phv00086710, phv00086723, phv00086724, phv00086725,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00087032, phv00087045, phv00087046, phv00087047, phv00159096, phv00174882,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00174883, phv00175589, phv00175593, phv00175596, phv00175604, phv00175755,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00175758, phv00175761, phv00175764, phv00176280, phv00176305, phv00176306,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00177023, phv00177027, phv00177030, phv00177038, phv00177189, phv00177192,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phv00177195, phv00177198, phv00528714, phv00283538, phv00155154</span>
+<span class="w">  </span><span class="nt">source_file</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">source_file</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ARIC-ingest/hrtrt.yaml, CARDIA-ingest/hrtrt.yaml, CHS-ingest/hrtrt.yaml,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">COPDGene-ingest/hrt_rt.yaml, FHS-ingest/hrtrt.yaml, HCHS-ingest/hrtrt.yaml,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">JHS-ingest/hrtrt.yaml, MESA-ingest/hrtrt.yaml, SPIROMICS-ingest/hrt_rt.yaml,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">WHI-ingest/hrtrt.yaml</span>
+<span class="w">  </span><span class="nt">unit</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">tag</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">unit</span>
+<span class="w">    </span><span class="nt">value</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;{beats}/min&#39;</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">30 second heart rate; 30 second heart rate after chair stands; 30 second</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">heart rate before chair stands; 30 second heart rate standing; 30 second heart rate</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">supine; 60 second; 60 second heart rate; Arterial Tonometry; Average Heart rate</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">during brachial, radial and femoral tonometry; Average heart rate during brachial,</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">radial and femoral tonometry; Brachial Vascular Reactivity Test; Cardiac Magnetic</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Resonance Imaging; Electrocardiogram; Electrocardiogram, atrial rate; Electrocardiogram,</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">ventricular rate; HRV spectral mean; Heart rate during carotid tonometry; Peripheral</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">Arterial Tone; Post-repeated chair stand 30 second heart rate; atrial; average;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">average (Mmode_LVandRV_HR_avg); deflation; from machine; mitral doppler; recovery</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">3 min; recovery 5 min; recovery immediate; resting vital signs; resting, p-hyvent;</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">resting, sit; seated; stage 1; stage 2 - peak exercise; standing; supine; ventricular</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">hrtrt, hrt_rt</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://w3id.org/bdc/varlib</span>
+<span class="nt">exact_mappings</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OBA:1001087</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">domain_of</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MeasurementObservation</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">float</span>
+<span class="nt">unit</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">ucum_code</span><span class="p">:</span><span class="w"> </span><span class="s">&#39;{beats}/min&#39;</span>
+</code></pre></div>
+</details>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+                
+  
+
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        
+
+<footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+        Made with
+        <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+          Material for MkDocs
+        </a>
+        with emoji by
+        <a href="https://github.com/twitter/twemoji" target="_blank" rel="noopener">
+          Twemoji
+        </a>
+      </div>
+      
+<div class="md-social">
+  
+</div>
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link", "header.autohide", "navigation.expand", "navigation.instant", "navigation.instant.progress", "navigation.tracking", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/pymdownx-extras/extra-loader-B5CKpNQx.js"></script>
+      
+    
+  </body>
+</html>
