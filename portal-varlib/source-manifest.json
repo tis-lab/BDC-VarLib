@@ -1,0 +1,37 @@
+{
+  "status": "draft-not-approved",
+  "authorship": "OpenAI Codex assisted draft; domain review required",
+  "relocation": "Only active remote import paths rewritten to local siblings; upstream class/slot definitions unchanged. source_sha256 records fetched UTF-8 serialization.",
+  "upstream": [
+    {
+      "file": "vendor/bdc_variable_library.yaml",
+      "repository": "linkml/bdc-variable-library",
+      "commit": "d120020680096f584b242f8de7ac754b993b39f9",
+      "path": "src/bdc_variable_library/schema/bdc_variable_library.yaml",
+      "source_sha256": "73e9d34e4d9edfe2596967482de02d06626ba91e49b18423e02d71b1e911a228",
+      "vendored_sha256": "8a6a4b66159ebfd2ed534902e1577ab5dc2682b99b9aa91dc68d2f794124a544",
+      "license_file": "vendor/bdc-variable-library.LICENSE",
+      "license_sha256": "9cb2e559a68941124d501faa457a750f3b7dcf15fa9bb415d036a8cf348e54c8"
+    },
+    {
+      "file": "vendor/linkml_microschema_profile.yaml",
+      "repository": "linkml/linkml-microschema-profile",
+      "commit": "7f897122b4537b67ca9957132ec1b9f9305f3bc4",
+      "path": "src/linkml_microschema_profile/schema/linkml_microschema_profile.yaml",
+      "source_sha256": "d0de5cdb0510e2b46d19655749a7bf36e97d9e9d46ae7137eb3a70110517191f",
+      "vendored_sha256": "d0de5cdb0510e2b46d19655749a7bf36e97d9e9d46ae7137eb3a70110517191f",
+      "license_file": "vendor/linkml-microschema-profile.LICENSE",
+      "license_sha256": "a72a9b8c7cbe1187c619c7afefb57f12b540e2361f5bf0dee6380993d0692d14"
+    },
+    {
+      "file": "vendor/clinical_microschemas.yaml",
+      "repository": "linkml/clinical-microschemas",
+      "commit": "26176b3506fe8a12fb9fc7d075779c2ba8d10006",
+      "path": "src/clinical_microschemas/schema/clinical_microschemas.yaml",
+      "source_sha256": "ec60840382a4a31bb49f23876c485b49c10949879467a7e08f9a787b3a705a3c",
+      "vendored_sha256": "b6aedd33205ddc37cf261b07099d8805552857e71ea4d848e82092f4d238cfe4",
+      "license_file": "vendor/clinical-microschemas.LICENSE",
+      "license_sha256": "a72a9b8c7cbe1187c619c7afefb57f12b540e2361f5bf0dee6380993d0692d14"
+    }
+  ]
+}
