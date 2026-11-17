@@ -8,7 +8,9 @@ The library comes in two forms:
   used to build the documentation site.
 - **Data** (`src/bdc_varlib/data/`): JSON catalogs, one per ontology prefix,
   in the format the study-palette portal reads
-  ([portal-varlib contract](portal-varlib/README.md)).
+  ([portal-varlib contract](portal-varlib/README.md), currently a copy from
+  study-palette PR #72; it will link to the actual files once that PR is
+  merged).
 
 📖 **Documentation:** [tis-lab.github.io/BDC-VarLib](https://tis-lab.github.io/BDC-VarLib)
 
@@ -55,8 +57,16 @@ Each catalog is a `PortalVariableCatalog` with:
 
 Supporting files:
 
-- `portal-varlib/`: the portal contract (`portal-varlib.yaml`) and its
-  validator, pinned from study-palette PR #72 (see `PINNED.md`).
+- `portal-varlib/`: the portal contract (`portal-varlib.yaml`), its
+  validator and the shared `terms.yaml` it imports (concepts are `Term`
+  records: `curie`, optional `label`), pinned from study-palette PR #72
+  (see `PINNED.md`).
+
+  > **Note:** PR #72 is not merged yet, so these are copies taken from the
+  > PR branch (`feature/104-portal-varlib-contract`, commit `b3c96b0`). Once
+  > PR #72 is merged, this README and `PINNED.md` will point to the actual
+  > files on study-palette's main branch, and the copies will be re-pinned to
+  > the merged commit.
 - `scripts/labels_manual.tsv`: hand-entered labels (`curie`, `label`,
   `source`) for codes no ontology release covers.
 

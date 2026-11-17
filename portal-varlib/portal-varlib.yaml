@@ -1,7 +1,7 @@
 # DRAFT: extends real upstream types; no participant/dataset/hierarchy counts.
 id: https://w3id.org/tis-lab/study-palette/proposals/portal-varlib
 name: portal_varlib_contract_proposal
-version: 0.3.0-draft
+version: 0.3.1-draft
 title: Portal IntegratedVariable contract proposal
 description: Portal metadata catalog extending pinned upstream variable classes. Distinct
   integrated variable identities link to compound variables and studies. Not participant
@@ -15,6 +15,7 @@ default_range: string
 imports:
 - linkml:types
 - vendor/bdc_variable_library
+- terms
 classes:
   PortalVariableCatalog:
     tree_root: true
@@ -44,7 +45,7 @@ classes:
         multivalued: true
         inlined_as_list: true
       concepts:
-        range: PortalConcept
+        range: Term
         required: true
         multivalued: true
         inlined_as_list: true
@@ -122,16 +123,6 @@ classes:
     slot_usage:
       id:
         required: true
-  PortalConcept:
-    description: Ontology metadata, distinct from labels of variables.
-    attributes:
-      curie:
-        identifier: true
-        required: true
-        pattern: ^[A-Za-z][A-Za-z0-9._-]*:[A-Za-z0-9._-]+$
-      label:
-        description: Verified ontology label; omit when unavailable.
-        pattern: .*\S.*
   PortalMetadataSource:
     description: Versioned provenance of metadata. A checksum/revision does not prove
       clinical accuracy.
